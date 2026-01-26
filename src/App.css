@@ -1,0 +1,39 @@
+.app{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* heightをmin-heightに変更してコンテンツ量に対応 */
+  max-width: 1200px; /* コンテンツの最大幅を少し狭める */
+  margin: 20px auto; /* 上下のマージンを追加 */
+  padding: 0 24px; /* 左右のパディングを増やす */
+}
+.headText{
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.headText > span{
+  font-size: 18px;
+}
+.busCards{
+  display: flex;
+  gap: 20px;
+}
+.busScheduleTable{
+  display: flex;
+  gap: 20px;
+}
+/* メディアクエリの追加 */
+@media screen and (max-width: 820px) {
+  .headText{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .busCards {
+    flex-direction: column;
+    gap: 0px; /* 縦並びの時の間隔を狭める */
+  }
+  .busScheduleTable{
+    flex-direction: column;
+    gap: 10px;
+  }
+}

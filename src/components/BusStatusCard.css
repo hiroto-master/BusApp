@@ -1,0 +1,51 @@
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* パディングを均等にする */
+    display: flex;
+    justify-content: space-between; /* 要素を両端に配置 */
+    align-items: center;
+    transition: all 0.3s ease; /* ホバー時のアニメーション */
+    margin-bottom: 16px;
+}
+
+.card:hover {
+    transform: translateY(-3px); /* ホバー時に少し浮き上がる効果 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card_info {
+    display: flex;
+    flex-direction: column; /* 路線と待ち時間を縦に並べる */
+    gap: 12px; /* 要素間のスペース */
+}
+
+.route {
+    font-weight: bold;
+    font-size: 22px; /* 少し大きくして目立たせる */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* アイコンとテキストの間隔 */
+    color: #333;
+}
+
+.card_status {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* アイコンとテキストの間隔 */
+    color: #555;
+}
+
+.card_status > span {
+    font-weight: bold;
+    color: #007bff; /* 待ち時間を強調する色 */
+}
+
+.nextTime {
+    text-align: right;
+    color: #888; /* 少し薄くして補助的な情報とする */
+    font-size: 15px;
+    font-weight: 500;
+}

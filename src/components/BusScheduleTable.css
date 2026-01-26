@@ -1,0 +1,62 @@
+.table-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    /* 画面に合うように広げる */
+    flex: 1;
+    transition: all 0.3s ease;
+}
+.table-container:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.table-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.schedule-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.schedule {
+    width: 100%;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* 列幅を固定するために追加 */
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: none; /* まず全ての線を消す */
+    border-bottom: 1px solid #eee; /* 下線だけ引く */
+    padding: 12px;
+}
+
+.schedule-table th {
+    background-color: #f8f9fa; /* ヘッダーの背景色 */
+    color: #333; /* ヘッダーの文字色 */
+    font-weight: bold;
+}
+
+/* 最後の行の下線は不要なので消す */
+.schedule-table tr:last-child td {
+    border-bottom: none;
+}
+
+.hour{
+    width: 25%;
+    text-align: center;
+}
+.minute{
+    width: 75%;
+    text-align: left;
+}
