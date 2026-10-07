@@ -1,0 +1,8 @@
+# 本番（raspberry_pi/）で使うライブラリ。
+# 当時ラズパイに入っていたバージョンは記録が残っていないため、バージョンは固定していない。
+# 参考: 開発に使った PC の環境では ultralytics 8.4.21 / opencv-python 4.13.0.92 / numpy 2.4.3 / psutil 7.2.2
+ultralytics
+opencv-python
+firebase-admin
+paramiko
+psutil

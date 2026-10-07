@@ -1,0 +1,24 @@
+# 秘密情報: Firebase のサービスアカウント鍵
+*firebase-adminsdk*.json
+serviceAccountKey.json
+.env
+
+# モデル・データ（Releases か各自の環境に置く）
+*.pt
+*.pth
+*.zip
+
+# 実行時に生成される画像・出力
+*.jpg
+*.jpeg
+*.png
+*.xlsx
+*_images/
+*_processed_images/
+raw_images/
+received_images/
+
+# Python
+venv/
+.venv/
+__pycache__/
